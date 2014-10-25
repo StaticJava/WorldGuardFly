@@ -1,0 +1,31 @@
+name: WorldGuardFly
+main: me.staticjava.WorldGuardFly
+version: 1.0
+
+depends: [WorldGuard]
+
+commands:
+  flydisable:
+    description: Disables fly for the specified region.
+    usage: |
+      /<command> [region]
+      Example: /<command> region123 - Disables fly in the region "region123".
+  flyenable:
+    description: Enables fly for the specified region.
+    usage: |
+      /<command> [region]
+      Example: /<command> region123 - Enables fly in the region "region123".
+  flyreload:
+    description: Reloads the WorldGuardFly configuration file.
+    usage: |
+      /<command>
+
+permissions:
+  wgfly.disable:
+    description: Allows user to use the tpdisable command.
+  wgfly.enable:
+    description: Allows user to use the tpenable command.
+  wgfly.reload:
+    description: Allows user to use the tpreload command.
+  wgfly.bypass:
+    description: Allows user to bypass TP even whilst disabled.
